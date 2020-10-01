@@ -1,3 +1,22 @@
+ice (1.1.4) unstable; urgency=medium
+
+  * Fix to forward Rx LLDP packets to the OS when firmware LLDP is disabled
+  * Fix build failure on RHEL 8.3 beta, SLES 15, SLES 12 and Ubuntu 20.04
+  * Fix bugs around ITR throttling
+  * Fix bugs around ethtool and netdev stats mismatch
+  * Fix call trace after wake up from S3 state
+  * Fix issues around XDP performance across multiple queues
+  * Fix system crash triggered by VSI exhausion corner condition
+  * Fix issues around PTP/SR-IOV co-existence
+  * Fix issues around Linux bridge and SR-IOV co-existence
+  * Fix kernel panic when in recovery mode
+  * Fix improper locking constructs in certain flows
+  * Fix multiple memory leaks
+  * Fix multiple issues around improper disabling of Tx queues
+  * Fix VF ADQ max Tx rate issues
+
+ -- Damjan Marion <dmarion@me.com>  Fri, 02 Oct 2020 00:26:43 +0200
+
 ice (1.0.4) unstable; urgency=medium
 
   * First available release
