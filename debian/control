@@ -1,0 +1,12 @@
+Source: ice
+Section: net
+Priority: optional
+Maintainer: Damjan Marion <dmarion@me.com>
+Build-Depends: debhelper (>= 9), dkms
+Standards-Version: 3.9.4
+
+Package: ice-dkms
+Architecture: all
+Depends: dkms, ${misc:Depends}
+Description: Intel ice adapter driver
+ This package contains Linux kernel driver for Intel Colimbiaville
