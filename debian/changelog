@@ -1,3 +1,49 @@
+ice (1.2.1) unstable; urgency=medium
+
+  The following new devices are supported in this release:
+
+  * Intel(R) Ethernet Network Adapter E810-C-Q1 for OCP 3.0
+  * Intel(R) Ethernet Network Adapter E810-L-Q2 for OCP 3.0
+  * Intel(R) Ethernet Network Adapter E810-C-Q1
+
+  The following features were added in this release:
+
+  * Detecting and logging malicious virtual functions
+  * NVM update through the Linux devlink interface
+  * ACL rules configuration by device control function (DCF)
+
+  Several improvements and fixes were implemented. A few
+  noteworthy ones are mentioned below:
+
+  * Use correct xdp_ring with XDP_TX action
+  * Fix race condition by delaying netdev registration
+  * Fix VSIs TC regions mapping
+  * Improve MSI-X vector enablement fallback logic
+  * Free pf struct in ice_remove correctly
+  * Fix excessive CPU usage on uncabled ports
+  * Fix various style issues in ice_virtchnl_pf.c
+  * Handle increasing tx or rx ring sizes
+  * Set Rx uSec for ADQ vectors when transition to/from interrupt
+  * Call dma_unmap_page with correct size argument
+  * Move devlink parameter publish to after init HW
+  * Use the VF VSI's rss_table_size for configuring RSS LUT
+  * Change link misconfiguration message
+  * Display security revision in devlink info
+  * Move ntuple filter count check
+  * Add support for reporting errors to RDMA peer
+  * Increase maximum wait time for flash write commands
+  * Add malicious VF detection
+  * Move filter count logic into ice_ntuple_get_max_fltr_cnt()
+  * Create macros for ACL miss counters
+  * Rename filter segment checks to be more generic
+  * Implement flow for IPv6 next header (extension header)
+  * Fix/remove outdated comments around ice_set_wb_on_itr()
+  * Create flash_info structure and separate NVM version
+  * Fix flow director IPv6 flexbyte
+  * Avoid PF reset on benign PE Error
+
+ -- Damjan Marion <dmarion@me.com>  Fri, 06 Nov 2020 22:11:49 +0100
+
 ice (1.1.4) unstable; urgency=medium
 
   * Fix to forward Rx LLDP packets to the OS when firmware LLDP is disabled

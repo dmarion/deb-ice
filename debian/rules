@@ -28,6 +28,10 @@ override_dh_auto_install:
 	mkdir -p debian/$(PKG)-dkms/usr/share/doc/$(PKG)-dkms/
 	install -m 644 $(PKG)-$(VER)/README debian/$(PKG)-dkms/usr/share/doc/$(PKG)-dkms
 	install -m 644 $(PKG)-$(VER)/COPYING debian/$(PKG)-dkms/usr/share/doc/$(PKG)-dkms
+	# DDP /lib/firmware/updates/intel/ice/ddp
+	mkdir -p debian/$(PKG)-dkms/lib/firmware/updates/intel/ice/ddp
+	install -m 644 $(PKG)-$(VER)/ddp/*.pkg debian/$(PKG)-dkms/lib/firmware/updates/intel/ice/ddp
+	cd debian/$(PKG)-dkms/lib/firmware/updates/intel/ice/ddp && ln -s ice-*.pkg ice.pkg
 
 override_dh_dkms:
 	sed -e "s/#MODULE_NAME#/$(PKG)/" debian/dkms.in > debian/dkms
