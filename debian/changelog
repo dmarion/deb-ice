@@ -1,3 +1,28 @@
+ice (1.5.8) unstable; urgency=medium
+
+  The following new device is supported in this release:
+
+  * Intel(R) Ethernet Network Adapter E810-XXV-4 for OCP 3.0
+
+  The following features were added in this release:
+
+  * Support for higher power modules on select E800 series devices
+  * Support for device health events
+  * Support for switchdev mode
+
+  Several improvements and fixes were implemented. A few noteworthy ones are
+  mentioned below
+
+  * Fix multiple driver build failures
+  * Fix call trace due to WQ_MEM_RECLAIM workqueue
+  * Fix Intel(R) Ethernet Flow Director functionality after traffic class reinit
+  * Fix call trace on VXLAN filter addition
+  * Fix driver rebuild after reset
+  * Fix issue where the interface couldn't transmit LLDP packets
+  * Fix incorrect ethtool reporting autoneg on some backplane images
+
+ -- Damjan Marion <dmarion@me.com>  Sat, 22 May 2021 13:45:13 +0200
+
 ice (1.4.11) unstable; urgency=medium
 
   The following features were added in this release:
