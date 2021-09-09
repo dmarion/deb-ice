@@ -1,3 +1,14 @@
+ice (1.6.7) unstable; urgency=medium
+
+  This version fixes some issues that were reported on ice-1.6.4
+
+  * Fix to report AUI-C2C PHY type as KR ethtool link mode
+  * Improve latency for 2k and 4k size packets for TCP traffic
+  * Allow muliple virtual functions to have the same MAC address (requires
+    VF spoof check to be disabled)
+
+ -- Damjan Marion <dmarion@me.com>  Thu, 09 Sep 2021 11:46:53 +0200
+
 ice (1.6.4) unstable; urgency=medium
 
   The following new devices are supported in this release:
