@@ -1,3 +1,31 @@
+ice (1.6.4) unstable; urgency=medium
+
+  The following new devices are supported in this release:
+
+  Intel(R) Ethernet 25G 4P E810-XXV OCP
+
+  The following features were added in this release:
+
+  DSCP (L3) QoS support
+  Firmware logging support
+
+  Several improvements and fixes were implemented. A few noteworthy ones are
+  mentioned below:
+
+  * Fix high interrupt rate when traffic is not active
+  * Fix incorrect MAC address display when in switchdev mode
+  * Fix system reboot when exercising max VFs in switchdev mode
+  * Fix traffic failure after a global reset
+  * Fix XDP program load failure when at MTU 3050 and above
+  * Fix IPv6 switchdev offload
+  * Fix traffic drop on unrelated port when in switchdev mode
+  * Fix "failed to delete MAC filters" message when in switchdev mode
+  * Fix drop action offload failure when in switchdev mode
+  * Fix crash when adding tc filter when in switchdev mode
+  * Fix false positive warning in set_irq_affinity
+
+ -- Damjan Marion <dmarion@me.com>  Thu, 09 Sep 2021 11:44:29 +0200
+
 ice (1.5.8) unstable; urgency=medium
 
   The following new device is supported in this release:
