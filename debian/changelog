@@ -1,3 +1,24 @@
+ice (1.7.16) unstable; urgency=medium
+
+  The following new devices are supported in this release:
+
+  * Intel(R) Ethernet Network Adapter E810-XXV-4T
+
+  The following features were added in this release:
+
+  * Extended SyncE and PTP (IEEE-1588) support
+  * RDMA support in VF
+
+  Several improvements and fixes were implemented. A few noteworthy ones are
+  mentioned below:
+
+  * Fix low-core machines crashing on DCB config
+  * Fix null pointer crash during VF resets
+  * Fix driver unload with LAG active
+  * Fix adding ethtool ntuple rule to ADQ TCs
+
+ -- Damjan Marion <dmarion@me.com>  Thu, 06 Jan 2022 12:09:04 +0100
+
 ice (1.6.7) unstable; urgency=medium
 
   This version fixes some issues that were reported on ice-1.6.4
