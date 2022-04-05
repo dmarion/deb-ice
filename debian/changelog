@@ -1,3 +1,25 @@
+ice (1.8.3) unstable; urgency=medium
+
+  The following new devices are supported in this release:
+
+  * Intel(R) Ethernet Network Adapter E810-C-Q2T
+
+  The following features were added in this release:
+
+  * GPS module support for Ethernet Network Adapter E810-XXV-4T device
+  * Debian 11 support
+
+  Several improvements and fixes were implemented. A few noteworthy ones are
+  mentioned below:
+
+  * Fix locking for Tx timestamp
+  * Fix PTP reset flow
+  * Fix IPIP and SIT TSO offload
+  * Fix memory allocation for stats
+  * Fix crash on reset with LAG configured
+
+ -- Damjan Marion <dmarion@me.com>  Tue, 05 Apr 2022 18:30:45 +0200
+
 ice (1.7.16) unstable; urgency=medium
 
   The following new devices are supported in this release:
