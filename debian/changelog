@@ -1,3 +1,14 @@
+ice (1.9.11) unstable; urgency=medium
+
+  Support for following OSes was added in this release:
+
+  * RHEL 9.0
+  * RHEL 8.6
+  * SLES 15 SP4
+  * Ubuntu 22.04
+
+ -- Damjan Marion <dmarion@me.com>  Thu, 29 Sep 2022 10:42:20 +0200
+
 ice (1.9.7) unstable; urgency=medium
 
   The following new devices are supported in this release:
