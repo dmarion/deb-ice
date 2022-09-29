@@ -1,3 +1,32 @@
+ice (1.9.7) unstable; urgency=medium
+
+  The following new devices are supported in this release:
+
+  * Intel(R) Ethernet 100G 2P E810-C-st Adapter
+  * Intel(R) Ethernet 100G 2P E810-C-stg Adapter
+
+  The following features were added in this release:
+
+  * ADQ support for 256 queues pairs
+  * ADQ acceleration using independent pollers
+  * ADQ auto configuration script
+  * ADQ per-tc inline Flow Director
+  * Support for Selectable Scheduler Topology
+  * Support for tc forward to queue
+  * Initial support for S-IOV
+
+  Several improvements and fixes were implemented. A few noteworthy ones are
+  mentioned below:
+
+  * Improve ice driver communication with VFs
+  * Fix not initializing GNSS on custom NICs
+  * Fix out-of-bounds access in PTP
+  * Fix promisc/allmulticast compatibility
+  * Fix UDP tunnel offload for newer kernels
+  * Fix max VLANs available for VF
+
+ -- Damjan Marion <dmarion@me.com>  Thu, 29 Sep 2022 10:36:57 +0200
+
 ice (1.8.9) unstable; urgency=medium
 
   This version fixes few issues reported on previous version.
