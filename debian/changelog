@@ -1,3 +1,13 @@
+ice (1.8.8) unstable; urgency=medium
+
+  This version fixes few issues reported on previous version.
+
+  * Fix devlink show params for RHEL distro
+  * Update README documentation
+  * Fix MSIX resources allocation for VF ADQ
+
+ -- Damjan Marion <dmarion@me.com>  Thu, 29 Sep 2022 10:32:02 +0200
+
 ice (1.8.3) unstable; urgency=medium
 
   The following new devices are supported in this release:
