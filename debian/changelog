@@ -1,3 +1,16 @@
+ice (1.10.1.2) unstable; urgency=medium
+
+  The following features were added in this release:
+
+  * Support for Linux RT kernels 4.x/5.x
+  * LAG Active-Backup for RDMA RoCEv2
+  * Support for VXLAN/GRE in switchdev mode
+  * FEC auto detect in SR/LR aka No-FEC
+  * Support for GTP via switchdev
+  * CRC aka FCS strip control via ethtool
+
+ -- Damjan Marion <dmarion@me.com>  Sun, 05 Mar 2023 12:49:33 +0000
+
 ice (1.9.11) unstable; urgency=medium
 
   Support for following OSes was added in this release:
