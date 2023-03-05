@@ -1,3 +1,21 @@
+ice (1.11.14) unstable; urgency=medium
+
+  The following features were added in this release:
+
+  * New default number of queues for high core count platforms
+  * Mutual exclusion of LAG and SR-IOV was removed
+  * Support for Linux Secure Boot
+  * Flow subscription for proviledged VFs
+
+  Several improvements and fixes were implemented. A few noteworthy:
+
+  * GNSS is disabled by deafault
+  * Fix IRQ affinity issues when set by user
+  * Numerous, small PTP code improvements
+  * Refactor statistics
+
+ -- Damjan Marion <dmarion@me.com>  Sun, 05 Mar 2023 12:54:40 +0000
+
 ice (1.10.1.2.2) unstable; urgency=medium
 
   Support for following OSes was added in this release:
