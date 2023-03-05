@@ -1,3 +1,12 @@
+ice (1.10.1.2.2) unstable; urgency=medium
+
+  Support for following OSes was added in this release:
+
+  * RHEL 8.7
+  * RHEL 9.1
+
+ -- Damjan Marion <dmarion@me.com>  Sun, 05 Mar 2023 12:53:01 +0000
+
 ice (1.10.1.2) unstable; urgency=medium
 
   The following features were added in this release:
