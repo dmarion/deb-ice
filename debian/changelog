@@ -1,3 +1,12 @@
+ice (1.11.17.1) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * Added support for RHEL8.8 and RHEL9.2
+  * Provide GNSS module on older kernels
+
+ -- Damjan Marion <dmarion@me.com>  Sat, 05 Aug 2023 14:02:55 +0000
+
 ice (1.11.14) unstable; urgency=medium
 
   The following features were added in this release:
