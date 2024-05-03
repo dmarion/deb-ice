@@ -1,3 +1,11 @@
+ice (1.12.18) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * Add support for RHEL8.9 and RHEL9.3
+
+ -- Damjan Marion <dmarion@me.com>  Fri, 03 May 2024 14:09:07 +0000
+
 ice (1.12.7) unstable; urgency=medium
 
   The following changes were made in this release:
