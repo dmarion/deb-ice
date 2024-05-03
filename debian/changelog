@@ -1,3 +1,18 @@
+ice (1.13.7) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * Add Switch Recipe resources reuse
+  * Add support of FW Debug Dump
+  * Add RoCEv2 Active/Active LAG support
+  * Add delay of SW initialization during PHY FW upload
+  * Add temperature sensor readouts
+  * Add "No FEC" mode to allow the LESM's "Auto FEC" mode to use "No FEC" in link establishment process
+  * Add support of ethtool flow-type ether
+  * umultiple bug fixes
+
+ -- Damjan Marion <dmarion@me.com>  Fri, 03 May 2024 14:11:36 +0000
+
 ice (1.12.18) unstable; urgency=medium
 
   The following changes were made in this release:
