@@ -1,3 +1,18 @@
+ice (1.14.9) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * Rx timestamp functionality for VFs
+  * Traffic mirroring via tc-mirred
+  * FW debug logs support in debugfs
+  * Introduce flexible VF loopback pacing configuration to improve VF-to-VF throughput
+  * Devlink health support for Tx hang debugging
+  * Add PHY statistics dump
+  * LLDP support on VF
+  And many other minor improvements and bugfixes.
+
+ -- Damjan Marion <dmarion@me.com>  Tue, 14 May 2024 14:51:09 +0000
+
 ice (1.13.7) unstable; urgency=medium
 
   The following changes were made in this release:
