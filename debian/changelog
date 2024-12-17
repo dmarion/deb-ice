@@ -1,3 +1,14 @@
+ice (1.15.4) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * support kernel's DPLL configuration
+  * add VF reset on Tx MDD event
+  * support ethtool flow-type ether
+  * support for Open Euler and ARM arch
+
+ -- Damjan Marion <dmarion@me.com>  Mon, 28 Oct 2024 11:03:55 +0000
+
 ice (1.14.9) unstable; urgency=medium
 
   The following changes were made in this release:

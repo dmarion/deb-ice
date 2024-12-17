@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 PKG=ice
 VER=$(shell dpkg-parsechangelog | grep Version: | head -1 | sed -e "s/Version: //")
-URL=http://download.sourceforge.net/project/e1000/$(PKG)%20stable/$(VER)/$(PKG)-$(VER).tar.gz
+URL=https://github.com/intel/ethernet-linux-ice/releases/download/v$(VER)/$(PKG)-$(VER).tar.gz
 TARBALL=../$(PKG)_$(VER).orig.tar.gz
 DH_VERBOSE = 1
 
