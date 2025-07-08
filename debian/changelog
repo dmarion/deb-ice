@@ -1,3 +1,29 @@
+ice (1.16.3) unstable; urgency=medium
+
+  * The following changes were made in this release:
+
+  * Add ieps 50G PAM4 SFI PHY Types support
+  * Add missing reset of the mac header
+  * Add ice_var_lock
+  * Add ethtool reset support
+  * Add ETF timestamp debug logging
+  * Fix passing VF RSS LUT size
+  * Fix spinlock init for sideband queue
+  * Fix dpll mutex init
+  * Fix max values for dpll pin phase adjust
+  * Fix clk source selection for CLK_SYNCE1 E825
+  * Fix SQ atomic retry delays
+  * Fix ieps CPI port for Mode 1A GNR-D
+  * Fix incorrect PHY settings for 100 GB/s
+  * Fix return type of ice_cfg_interrupt()
+  * Fix potential race condition in ice_reset_vf
+  * Fix ordering of ice_flash_info structure to save space
+  * Fix documentation Update MDD auto reset VF
+  * Remove checking non-negative proto count
+  * Refactor ice_fdb_add/del() signatures
+
+ -- Damjan Marion <dmarion@me.com>  Tue, 08 Jul 2025 14:12:39 +0000
+
 ice (1.15.5) unstable; urgency=medium
 
   The following changes were made in this release:
