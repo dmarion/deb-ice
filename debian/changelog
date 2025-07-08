@@ -1,3 +1,37 @@
+ice (1.17.2) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * Add documentation about PHY registers and FEC stats read
+  * Add freerun_filter ethtool flag
+  * Add sysfs file for SMA pin control
+  * Add E825 device to readme
+  * Fix reducing loglevel to debug for 'Can't delete DSCP' message
+  * Fix size of the passed buffer to ice_migration_save_devstate
+  * Fix possible OOB access in ice_vf_vsi_dis_single_txq
+  * Fix SMA sysfs store and U.FL names
+  * Fix devlink register on older kernels
+  * Fix param validation in get_q_vector
+  * Fix error message for insufficient filter space
+  * Fix ice_capture_crosststamp on kernels 6.11+
+  * Fix ice_adapter build without CONFIG_PCI_IOV
+  * Fix for missing OPT_PHY_TYPE bits in ACC_AOC_AUI adapters
+  * Fix ice_health_deinit() order
+  * Fix enabling DPLL only for E810 ethernet adapter
+  * Fix E82X timestamping not supported
+  * Fix missing 50G ethtool mappings
+  * Fix updating Get Tx Topology AQ command read flag
+  * Fix fwlog after driver reinit
+  * Fix tc iteration in ice_vc_cfg_qs_msg()
+  * Fix Get Tx Topology AQ command error on E830
+  * Fix possible out of bound access in ADQ map_q_vector
+  * Fix validation of virtchnl msg in irq map msg
+  * Fix setting default Rx VSI twice in switchdev setup
+  * Fix ix deinitializing VF in error path
+  * Fix SLES15sp7 beta3 compilation
+
+ -- Damjan Marion <dmarion@me.com>  Tue, 08 Jul 2025 14:38:13 +0000
+
 ice (1.16.3) unstable; urgency=medium
 
   * The following changes were made in this release:
