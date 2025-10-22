@@ -1,3 +1,20 @@
+ice (2.3.10) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * add disable link on boot support
+  * add disable VF RDMA capability when SR-IOV LAG is enabled
+  * fix crash on GLOBR with VFs
+  * fix TSPLL initialization
+  * fix tx_clk map initialization for E825
+  * fix reversed logic on VSI Config Prune
+  * fix set_bit() on misaligned memory in LAG init
+  * fix allocating excessive memory in ice_create_lag_recipe()
+  * fix uninitialized netdev_head in ice_lag_rebuild()
+  * fix vf-source-pruning flag
+
+ -- Damjan Marion <dmarion@me.com>  Wed, 22 Oct 2025 18:18:27 +0000
+
 ice (2.2.9) unstable; urgency=medium
 
   The following changes were made in this release:
