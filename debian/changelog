@@ -1,3 +1,17 @@
+ice (2.4.5) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * add support for new devices
+  * add support for RedHat 10.1 and 9.7
+  * add support for Active-Active SR-IOV LAG
+  * use DPLL subsystem for phase offset monitor interface
+  * add support for GNR-D Firmware Management Protocol (FMP)
+  * fix bug with 5-layer topology crashing during nvmupdate
+  * other bugfixes and improvements
+
+ -- Damjan Marion <dmarion@me.com>  Tue, 13 Jan 2026 14:30:43 +0100
+
 ice (2.3.15) unstable; urgency=medium
 
   The following changes were made in this release:
