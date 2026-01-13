@@ -1,3 +1,12 @@
+ice (2.3.15) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * add support for SLES16
+  * fix missing TX timestamps interrupts on E825 devices
+
+ -- Damjan Marion <dmarion@me.com>  Tue, 13 Jan 2026 14:27:33 +0100
+
 ice (2.3.14) unstable; urgency=medium
 
   The following changes were made in this release:
