@@ -1,3 +1,12 @@
+ice (2.5.4) unstable; urgency=medium
+
+  The following changes were made in this release:
+
+  * add support for new devices
+  * minor bugfixes and improvements
+
+ -- Damjan Marion <dmarion@me.com>  Mon, 11 May 2026 19:55:44 +0200
+
 ice (2.4.5) unstable; urgency=medium
 
   The following changes were made in this release:

@@ -1,0 +1,35 @@
+From: Damjan Marion <dmarion@me.com>
+Subject: ice: dpll: handle tracker get/put API
+
+Linux 7.0 adds a dpll_tracker argument to dpll_device_get(),
+dpll_device_put(), dpll_pin_get(), and dpll_pin_put(). Detect the new
+prototype and pass NULL for the tracker.
+
+--- a/src/kcompat-generator.sh
++++ b/src/kcompat-generator.sh
+@@ -187,6 +187,7 @@ function gen-dpll() {
+ 	gen HAVE_DPLL_LOCK_STATUS_ERROR if method lock_status_get of dpll_device_ops matches status_error in "$dh"
+ 	gen HAVE_DPLL_PHASE_OFFSET if method phase_offset_get of dpll_pin_ops in "$dh"
+ 	gen HAVE_DPLL_PHASE_OFFSET_MONITOR if method phase_offset_monitor_set of dpll_device_ops in "$dh"
++	gen HAVE_DPLL_TRACKER if fun dpll_device_get matches dpll_tracker in "$dh"
+ 	gen NEED_DPLL_NETDEV_PIN_SET if fun dpll_netdev_pin_set absent in "$dh"
+ }
+ 
+--- a/src/ice_dpll.c
++++ b/src/ice_dpll.c
+@@ -25,6 +25,15 @@
+ #define ICE_DPLL_HEALTH_STATUS_LOCKED		1
+ #define ICE_DPLL_HEALTH_STATUS_UNLOCKED		0
+ 
++#ifdef HAVE_DPLL_TRACKER
++#define dpll_device_get(clock_id, idx, module) \
++	dpll_device_get(clock_id, idx, module, NULL)
++#define dpll_device_put(dpll) dpll_device_put(dpll, NULL)
++#define dpll_pin_get(clock_id, idx, module, prop) \
++	dpll_pin_get(clock_id, idx, module, prop, NULL)
++#define dpll_pin_put(pin) dpll_pin_put(pin, NULL)
++#endif
++
+ #define ICE_DPLL_IN_ESYNC_ENABLED	(ICE_AQC_GET_CGU_IN_CFG_ESYNC_EN << \
+ 	ICE_AQC_GET_CGU_IN_CFG_FLG2_ESYNC_REFSYNC_EN_SHIFT)
+ #define ICE_DPLL_PIN_SW_INPUT_ABS(in_idx) \
